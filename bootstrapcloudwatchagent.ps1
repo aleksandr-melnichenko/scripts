@@ -10,7 +10,7 @@ function Unzip
 Unzip "C:\cwagent\cwagent.zip" "C:\cwagent"
 cd "C:\cwagent"
 .\install.ps1
-wget https://goo.gl/LHCNEG -OutFile "C:\Program Files\Amazon\AmazonCloudWatchAgent\config.json"
+wget https://goo.gl/drkN9x -OutFile "C:\Program Files\Amazon\AmazonCloudWatchAgent\config.json"
 cd “C:\Program Files\Amazon\AmazonCloudWatchAgent”
 .\amazon-cloudwatch-agent-ctl.ps1 -a fetch-config -m ec2 -c file:config.json -s
 </powershell>
